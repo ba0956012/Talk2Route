@@ -30,3 +30,23 @@ This project is a **smart indoor navigation system** that leverages natural lang
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 2. Set up .env for Azure OpenAI
+
+```bash
+AZURE_OPENAI_ENDPOINT=your_azure_endpoint
+AZURE_OPENAI_API_VERSION=2023-07-01-preview
+AZURE_OPENAI_CHATGPT_DEPLOYMENT=your_deployment_name
+OPENAI_API_KEY=your_api_key
+```
+
+### 3. Run the app
+
+```bash
+python main.py
+```
+The system will prompt for:
+
+A starting node ID (e.g., 0 for corridor)
+A natural language query (e.g., "I need to attend a meeting")
